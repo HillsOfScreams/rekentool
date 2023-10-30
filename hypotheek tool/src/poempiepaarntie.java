@@ -80,14 +80,7 @@ public class poempiepaarntie {
     public void displayCombinedIncome() {
         System.out.println("Combined Annual Income: " + combinedIncome);
     }
-//    public double maximumLoan;
-//    public double displaymaximumLoan()
-//    {
-//    	double maximumLoan = combinedIncome * 4.25;
-//    	
-//    	System.out.println("The maximum amount you are allowed to lend is: " + maximumLoan);
-//    	return maximumLoan;
-//    }
+
     public double calculateMaximumLoan() {
         double maxLoan = combinedIncome * 4.25;
 

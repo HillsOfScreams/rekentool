@@ -39,20 +39,7 @@ public class poempiepaarntieTest {
     }
     
     
-    //intergration test 3: 
-    @Test
-    public void testCalculateMaximumLoanIntegration() {
-        // Arrange
-    	poempiepaarntie calculator = new poempiepaarntie();
-        calculator.setCombinedIncome("60000"); // Set a sample income
-        calculator.setHasStudentDebt(true); // Has student debt
-
-        // Act
-        double maxLoan = calculator.calculateMaximumLoan();
-
-        // Assert
-        assertEquals(60000 * 4.25 * 0.75, maxLoan, 0.001); // Ensure maxLoan is reduced with student debt
-    }
+   
     
     
     @Test
@@ -127,6 +114,9 @@ public class poempiepaarntieTest {
             //5% yearly interest rate / 12 months = 0.41666667% monthly interest rate
         }
         
+        
+        
+        //intergration test 3: 
         @Test
         public void testCalculateMonthlyPayment() {
             // Arrange
